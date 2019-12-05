@@ -9,13 +9,22 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link href="styles/main.css" rel="stylesheet">
   </head>
   <body id="top">
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <img src="images/hafizamir.jpg" alt="Image" class="rounded-circle"/>
+  </div>
+</div>
+  
     <header>
       <div class="profile-page sidebar-collapse">
         <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+        
           <div class="container">
              
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
@@ -40,11 +49,12 @@
       <div class="page-header-image" data-parallax="true" style="background-image: url('images/Zephyr.jpg');"></div>
       <div class="container">
         <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="images/hafizamir.jpg" alt="Image"/></a></div>
+          <div class="cc-profile-image"><a href="#" data-toggle="modal" data-target="#exampleModal"><img src="images/hafizamir.jpg" alt="Image"/></a></div>
           <div class="h2 title">Hafiz Amir Ul Hassan</div>
           <p class="category text-white">SQA Engineer & Automation Engineer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><b>Hire Me</b></a>
         </div>
       </div>
+      
       <div class="section">
         <div class="container">
           <div class="button-container"><a style="background:#3399FF"; class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/hafizali.hassan.52" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
@@ -319,6 +329,68 @@
     </div>
   </div>
 </div>
+
+
+<div class="section" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ml-auto mr-auto">
+        <div class="h4 text-center mb-4 title">Portfolio</div>
+        <div class="nav-align-center">
+          <ul class="nav nav-pills nav-pills-primary" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content gallery mt-5">
+      <div class="tab-pane active" id="web-development">
+        <div class="ml-auto mr-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://www.topuniversities.com/">
+                  <figure class="cc-effect"><img src="images/homepage.png" alt="Image" style="border-radius: 10px;"/>
+                    <figcaption>
+                      <div class="h4"><b>TOP UNIVERSITIES</b></div>
+                    </figcaption>
+                  </figure></a>
+                  </div>
+                            
+                  <div class="row">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://www.topmba.com/app/">
+                  <figure class="cc-effect"><img src="images/MBA.png" alt="Image" style="border-radius: 10px;"/>
+                    <figcaption>
+                      <div class="h4"><b>TOP MBA</b></div>
+                      
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/rankingpage.png" alt="Image" style="border-radius: 10px;"/>
+                    <figcaption>
+                      <div class="h4">Food Order Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+                  
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/MT.png" alt="Image" style="border-radius: 10px;"/>
+                    <figcaption>
+                      <div class="h4">Web Advertising Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+                 
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
 
 <div class="section" id="experience">
   <div class="container cc-experience">
@@ -660,9 +732,12 @@ He is always trying to branch out and further his skills, in which he is clearly
         <p>&copy;All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
       </div>
     </footer>
-    <script src="js/core/jquery.3.2.1.min.js"></script>
-    <script src="js/core/popper.min.js"></script>
-    <script src="js/core/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <script src="js/now-ui-kit.js?v=1.1.0"></script>
     <script src="js/aos.js"></script>
     <script src="scripts/main.js"></script>
